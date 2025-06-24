@@ -1,0 +1,496 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building on the built-in node in workspace /app/.jenkins/workspace/Document-short-url-snapshot
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+The recommended git tool is: NONE
+using credential a5f9bd63-2aaa-4870-b69d-92ec86cd9b2b
+Cloning the remote Git repository
+Cloning repository https://github.schneider-electric.com/E2E/document-short-url.git
+ > git init /app/.jenkins/workspace/Document-short-url-snapshot # timeout=10
+Fetching upstream changes from https://github.schneider-electric.com/E2E/document-short-url.git
+ > git --version # timeout=10
+ > git --version # 'git version 1.8.3.1'
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.schneider-electric.com/E2E/document-short-url.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.schneider-electric.com/E2E/document-short-url.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/WPL_2.4.1^{commit} # timeout=10
+Checking out Revision f53ffc5ca332b54fcc7f7655e658a95ec83774ae (refs/remotes/origin/WPL_2.4.1)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f53ffc5ca332b54fcc7f7655e658a95ec83774ae # timeout=10
+Commit message: "Fortify critical vulnerability fixed"
+ > git rev-list --no-walk f53ffc5ca332b54fcc7f7655e658a95ec83774ae # timeout=10
+[Document-short-url-snapshot] $ /bin/sh -xe /app/Jenkins/apache-tomcat-8.5.81/temp/jenkins7250771283885875336.sh
++ java -jar /app/Synopsys/synopsys-detect-9.9.0.jar --blackduck.url=https://blackduck.eu.se.com/ '--detect.project.name=SDURL_Document Short URL' --detect.project.version.name= --detect.source.path=/app/.jenkins/workspace/Document-short-url-snapshot --detect.accuracy.required=NONE --blackduck.api.token=YWIwODE3ZGItODNkOS00YjZhLWJhNTgtMjA1ZGFjMjljMTQxOjc3YTljOTgyLThjOGEtNDlhYy1iZGU1LTE0NGYzYzA4MDNjOQ==
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+2025-06-24 08:20:06 UTC INFO  [main] --- Detect-Self-Updater:  Checking https://blackduck.eu.se.com/api/tools/detect API for centrally managed Detect version to download to /app/tmp.
+2025-06-24 08:20:12 UTC INFO  [main] --- Detect-Self-Updater:  The Detect version 10.3.0 mapped at Black Duck server is eligible for updating the current version of 9.9.0 as the self-update feature is available in the mapped version.
+2025-06-24 08:20:12 UTC INFO  [main] --- Detect-Self-Updater:  Centrally managed version of Detect was downloaded successfully and is ready to be run: /app/tmp/detect-10.3.0.jar
+______     _            _
+|  _  \   | |          | |
+| | | |___| |_ ___  ___| |_
+| | | / _ \ __/ _ \/ __| __|
+| |/ /  __/ ||  __/ (__| |_
+|___/ \___|\__\___|\___|\__|
+
+
+Detect Version: 10.3.0
+
+2025-06-24 08:20:14 UTC INFO  [main] --- 
+2025-06-24 08:20:14 UTC INFO  [main] --- Current property values:
+2025-06-24 08:20:14 UTC INFO  [main] --- --property = value [notes]
+2025-06-24 08:20:14 UTC INFO  [main] --- ------------------------------------------------------------
+2025-06-24 08:20:14 UTC INFO  [main] --- blackduck.api.token = **************************************************************************************************** [cmd] 
+2025-06-24 08:20:14 UTC INFO  [main] --- blackduck.url = https://blackduck.eu.se.com/ [cmd] 
+2025-06-24 08:20:14 UTC INFO  [main] --- detect.accuracy.required = NONE [cmd] 
+2025-06-24 08:20:14 UTC INFO  [main] --- detect.project.name = SDURL_Document Short URL [cmd] 
+2025-06-24 08:20:14 UTC INFO  [main] --- detect.project.version.name =  [cmd] 
+2025-06-24 08:20:14 UTC INFO  [main] --- detect.source.path = /app/.jenkins/workspace/Document-short-url-snapshot [cmd] 
+2025-06-24 08:20:14 UTC INFO  [main] --- ------------------------------------------------------------
+2025-06-24 08:20:14 UTC INFO  [main] --- 
+2025-06-24 08:20:14 UTC INFO  [main] --- Detect build date: 2025-02-27
+2025-06-24 08:20:14 UTC INFO  [main] --- Source directory: /app/.jenkins/workspace/Document-short-url-snapshot
+2025-06-24 08:20:14 UTC INFO  [main] --- Output directory: /app/blackduck
+2025-06-24 08:20:14 UTC INFO  [main] --- Run directory: /app/blackduck/runs/2025-06-24-08-20-13-984
+2025-06-24 08:20:14 UTC INFO  [main] --- 
+2025-06-24 08:20:19 UTC INFO  [main] --- Successfully connected to Black Duck (version 2025.1.1)!
+2025-06-24 08:20:20 UTC INFO  [main] --- ----------------------------------
+2025-06-24 08:20:20 UTC INFO  [main] --- Will include the Docker tool.
+2025-06-24 08:20:20 UTC INFO  [main] --- Docker actions finished.
+2025-06-24 08:20:20 UTC INFO  [main] --- ----------------------------------
+2025-06-24 08:20:20 UTC INFO  [main] --- Will include the Bazel tool.
+2025-06-24 08:20:20 UTC INFO  [main] --- Bazel actions finished.
+2025-06-24 08:20:20 UTC INFO  [main] --- ----------------------------------
+2025-06-24 08:20:20 UTC INFO  [main] --- Will include the Detectors tool.
+2025-06-24 08:20:20 UTC INFO  [main] --- Searching for detectors.
+2025-06-24 08:20:20 UTC INFO  [main] --- Evaluating detectors. This may take a while.
+2025-06-24 08:20:21 UTC INFO  [main] --- Running executable >/app/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven/bin/mvn dependency:tree -T1
+2025-06-24 08:20:26 UTC INFO  [main] --- Process return code: 0
+2025-06-24 08:20:26 UTC INFO  [main] --- Running executable >/bin/git config --get remote.origin.url
+2025-06-24 08:20:26 UTC INFO  [main] --- Process return code: 0
+2025-06-24 08:20:26 UTC INFO  [main] --- Running executable >/bin/git rev-parse --abbrev-ref HEAD
+2025-06-24 08:20:26 UTC INFO  [main] --- Process return code: 0
+2025-06-24 08:20:26 UTC INFO  [main] --- HEAD is detached for this repo, using heuristics to find Git branch.
+2025-06-24 08:20:26 UTC INFO  [main] --- Running executable >/bin/git log -n 1 --pretty=%d HEAD
+2025-06-24 08:20:26 UTC INFO  [main] --- Process return code: 0
+2025-06-24 08:20:26 UTC INFO  [main] --- Running executable >/bin/git rev-parse HEAD
+2025-06-24 08:20:26 UTC INFO  [main] --- Process return code: 0
+2025-06-24 08:20:26 UTC INFO  [main] --- ======================================================================================================
+2025-06-24 08:20:26 UTC INFO  [main] --- Detector Report
+2025-06-24 08:20:26 UTC INFO  [main] --- ======================================================================================================
+2025-06-24 08:20:26 UTC INFO  [main] --- 	/app/.jenkins/workspace/Document-short-url-snapshot (depth 0)
+2025-06-24 08:20:26 UTC INFO  [main] --- 		Maven CLI: SUCCESS
+2025-06-24 08:20:26 UTC INFO  [main] --- 			Found file: /app/.jenkins/workspace/Document-short-url-snapshot/pom.xml
+2025-06-24 08:20:26 UTC INFO  [main] --- 			Found executable: /app/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven/bin/mvn
+2025-06-24 08:20:26 UTC INFO  [main] --- 		Git: SUCCESS
+2025-06-24 08:20:26 UTC INFO  [main] --- 			Found file: /app/.jenkins/workspace/Document-short-url-snapshot/.git
+2025-06-24 08:20:26 UTC INFO  [main] --- 			Found executable: /bin/git
+2025-06-24 08:20:26 UTC INFO  [main] --- ----------------------------------
+2025-06-24 08:20:26 UTC INFO  [main] --- The following project names were found: 
+2025-06-24 08:20:26 UTC INFO  [main] --- 	MAVEN: wp-library-parent, 2.3_RC1
+2025-06-24 08:20:26 UTC INFO  [main] --- Chose to use MAVEN at depth 0 for project name and version. Override with detect.project.detector.
+2025-06-24 08:20:26 UTC INFO  [main] --- Detectors actions finished.
+2025-06-24 08:20:26 UTC INFO  [main] --- ----------------------------------
+2025-06-24 08:20:26 UTC INFO  [main] --- Project name: SDURL_Document Short URL
+2025-06-24 08:20:26 UTC INFO  [main] --- Project version: 2.3_RC1
+2025-06-24 08:20:29 UTC INFO  [main] --- Starting the codelocation file uploads.
+2025-06-24 08:20:31 UTC INFO  [pool-1-thread-1] --- Try #1 for task bdio upload (elapsed: 00:00:00.000)...complete!
+2025-06-24 08:20:31 UTC INFO  [main] --- Completed the codelocation file uploads.
+2025-06-24 08:20:31 UTC INFO  [main] --- ----------------------------------
+2025-06-24 08:20:31 UTC INFO  [main] --- Will include the Signature Scanner tool.
+2025-06-24 08:20:31 UTC INFO  [main] --- No scan targets provided - registering the source path /app/.jenkins/workspace/Document-short-url-snapshot to scan
+2025-06-24 08:20:33 UTC INFO  [main] --- The Black Duck Signature Scanner downloaded/found successfully: /app/blackduck/tools
+2025-06-24 08:20:33 UTC INFO  [main] --- Starting the Black Duck Signature Scan commands.
+2025-06-24 08:20:33 UTC INFO  [pool-3-thread-1] --- Black Duck CLI command: /app/blackduck/tools/Black_Duck_Scan_Installation/scan.cli-2025.1.1/jre/bin/java -Done-jar.silent=true -Done-jar.jar.path=/app/blackduck/tools/Black_Duck_Scan_Installation/scan.cli-2025.1.1/lib/cache/scan.cli.impl-standalone.jar -Xmx4096m -jar /app/blackduck/tools/Black_Duck_Scan_Installation/scan.cli-2025.1.1/lib/scan.cli-2025.1.1-standalone.jar --no-prompt --scheme https --host blackduck.eu.se.com --port 443 -v --logDir /app/blackduck/runs/2025-06-24-08-20-13-984/scan/BlackDuckScanOutput/2025-06-24_08-20-33-416_1 --statusWriteDir /app/blackduck/runs/2025-06-24-08-20-13-984/scan/BlackDuckScanOutput/2025-06-24_08-20-33-416_1 --project SDURL_Document Short URL --release 2.3_RC1 --name Document-short-url-snapshot/SDURL_Document Short URL/2.3_RC1 signature --exclude /.git/ /app/.jenkins/workspace/Document-short-url-snapshot
+2025-06-24 08:20:37 UTC WARN  [pool-3-thread-1-Stream Redirect Thread] --- WARN: Unable to find Hub manifest because the implementation title does not contain [URL: jar:file:/opt/dynatrace/oneagent/agent/bin/1.307.61.20250226-155505/any/java/oneagentjava.17.jar!/META-INF/MANIFEST.MF | Implementation title: oneagentjava.17].
+2025-06-24 08:20:37 UTC WARN  [pool-3-thread-1-Stream Redirect Thread] --- WARN: Unable to find Hub manifest because the implementation title does not contain [URL: jar:file:/opt/dynatrace/oneagent/agent/bin/1.307.61.20250226-155505/any/java/oneagentjava.11.jar!/META-INF/MANIFEST.MF | Implementation title: oneagentjava.11].
+2025-06-24 08:20:37 UTC WARN  [pool-3-thread-1-Stream Redirect Thread] --- WARN: Unable to find Hub manifest because the implementation title does not contain [URL: jar:file:/opt/dynatrace/oneagent/agent/bin/1.307.61.20250226-155505/any/java/oneagentjava.8.jar!/META-INF/MANIFEST.MF | Implementation title: oneagentjava.8].
+2025-06-24 08:20:37 UTC WARN  [pool-3-thread-1-Stream Redirect Thread] --- WARN: Unable to find Hub manifest because the implementation title does not contain [URL: jar:file:/opt/dynatrace/oneagent/agent/bin/1.307.61.20250226-155505/any/java/oneagentjava.jar!/META-INF/MANIFEST.MF | Implementation title: oneagentjava].
+2025-06-24 08:20:42 UTC INFO  [pool-3-thread-1] --- 
+2025-06-24 08:20:42 UTC INFO  [pool-3-thread-1] --- Black Duck Signature Scanner return code: 0
+2025-06-24 08:20:42 UTC INFO  [pool-3-thread-1] --- Signature Scanner log output directory: '/app/blackduck/runs/2025-06-24-08-20-13-984/scan/BlackDuckScanOutput/2025-06-24_08-20-33-416_1'
+2025-06-24 08:20:42 UTC INFO  [main] --- Completed the Black Duck Signature Scan commands.
+2025-06-24 08:20:42 UTC INFO  [main] --- Signature Scanner actions finished.
+2025-06-24 08:20:42 UTC INFO  [main] --- ----------------------------------
+2025-06-24 08:20:42 UTC INFO  [main] --- Will include the Binary Scanner tool.
+2025-06-24 08:20:42 UTC INFO  [main] --- Binary scanner found nothing to upload.
+2025-06-24 08:20:42 UTC INFO  [main] --- Binary Scanner actions finished.
+2025-06-24 08:20:42 UTC INFO  [main] --- ----------------------------------
+2025-06-24 08:20:42 UTC INFO  [main] --- Will include the Container Scanner tool.
+2025-06-24 08:20:42 UTC INFO  [main] --- No detect.container.scan.file.path property was provided. Skipping container scan.
+2025-06-24 08:20:42 UTC INFO  [main] --- Container Scanner actions finished.
+2025-06-24 08:20:42 UTC INFO  [main] --- ----------------------------------
+2025-06-24 08:20:42 UTC INFO  [main] --- Vulnerability Impact Analysis tool will not be run.
+2025-06-24 08:20:42 UTC INFO  [main] --- ----------------------------------
+2025-06-24 08:20:42 UTC INFO  [main] --- IaC Scanner tool will not be run.
+2025-06-24 08:20:42 UTC INFO  [main] --- ----------------------------------
+2025-06-24 08:20:42 UTC INFO  [main] --- Will include the Threat Intel Scan tool.
+2025-06-24 08:20:42 UTC INFO  [main] --- No detect.threatintel.scan.file.path property was provided. Skipping Threat Intel scan.
+2025-06-24 08:20:42 UTC INFO  [main] --- Threat Intel Scan actions finished.
+2025-06-24 08:20:42 UTC INFO  [main] --- ----------------------------------
+2025-06-24 08:20:42 UTC INFO  [main] --- Checking to see if Detect should check policy for violations.
+2025-06-24 08:20:46 UTC INFO  [main] --- 
+2025-06-24 08:20:46 UTC INFO  [main] --- 
+2025-06-24 08:20:46 UTC INFO  [main] --- Creating status file: /app/blackduck/runs/2025-06-24-08-20-13-984/status/status.json
+2025-06-24 08:20:46 UTC INFO  [main] --- 
+2025-06-24 08:20:46 UTC INFO  [main] --- Status file has been deleted.  To preserve status file, turn off cleanup actions.
+2025-06-24 08:20:46 UTC INFO  [main] --- Cleaning up directory: /app/blackduck/runs/2025-06-24-08-20-13-984
+2025-06-24 08:20:46 UTC INFO  [main] --- 
+2025-06-24 08:20:46 UTC INFO  [main] --- 
+2025-06-24 08:20:46 UTC INFO  [main] --- ======== Detect Result ========
+2025-06-24 08:20:46 UTC INFO  [main] --- 
+2025-06-24 08:20:46 UTC INFO  [main] --- Black Duck Project BOM: https://blackduck.eu.se.com/api/projects/59d3200c-1815-4083-9df9-8da846f69030/versions/81f66ffa-b212-47bf-9513-b82162f06991/components
+2025-06-24 08:20:46 UTC INFO  [main] --- 
+2025-06-24 08:20:46 UTC INFO  [main] --- ======== Detect Status ========
+2025-06-24 08:20:46 UTC INFO  [main] --- 
+2025-06-24 08:20:46 UTC INFO  [main] --- GIT: SUCCESS
+2025-06-24 08:20:46 UTC INFO  [main] --- MAVEN: SUCCESS
+2025-06-24 08:20:46 UTC INFO  [main] --- 
+2025-06-24 08:20:46 UTC INFO  [main] --- Signature scan / Snippet scan on /app/.jenkins/workspace/Document-short-url-snapshot: SUCCESS
+2025-06-24 08:20:46 UTC INFO  [main] --- Overall Status: SUCCESS - Detect exited successfully.
+2025-06-24 08:20:46 UTC INFO  [main] --- 
+2025-06-24 08:20:46 UTC INFO  [main] --- ===============================
+2025-06-24 08:20:46 UTC INFO  [main] --- 
+2025-06-24 08:20:46 UTC INFO  [main] --- Detect duration: 00h 00m 33s 385ms
+[Document-short-url-snapshot] $ /bin/sh -xe /app/Jenkins/apache-tomcat-8.5.81/temp/jenkins18100450905453681705.sh
++ /app/Fortify/Fortify_SCA_24.2.0/bin/sourceanalyzer -b Document-short-url-snapshot -clean
++ /app/Fortify/Fortify_SCA_24.2.0/bin/sourceanalyzer -b Document-short-url-snapshot /app/.jenkins/workspace/Document-short-url-snapshot/pom.xml /app/.jenkins/workspace/Document-short-url-snapshot/README.md /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-business /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-commons /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-repo /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-service /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-web
++ /app/Fortify/Fortify_SCA_24.2.0/bin/sourceanalyzer -b Document-short-url-snapshot -scan -f /app/.jenkins/workspace/Document-short-url-snapshot/Document-short-url-snapshot1.fpr
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+Parsing POMs
+Established TCP socket on 44715
+[Document-short-url-snapshot] $ /app/Jenkins/jdk-17.0.13/bin/java -cp /app/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-agent-1.14.jar:/app/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven/boot/plexus-classworlds-2.6.0.jar:/app/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven/conf/logging jenkins.maven3.agent.Maven35Main /app/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven /app/Jenkins/apache-tomcat-8.5.81/webapps/jenkins/WEB-INF/lib/remoting-3206.vb_15dcf73f6a_9.jar /app/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven35-interceptor-1.14.jar /app/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.14.jar 44715
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+<===[JENKINS REMOTING CAPACITY]===>channel started
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/app/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven/lib/maven-slf4j-provider-3.6.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/app/.jenkins/cache/artifactory-plugin/4.0.6/slf4j-simple-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.MavenSimpleLoggerFactory]
+Executing Maven:  -B -f /app/.jenkins/workspace/Document-short-url-snapshot/pom.xml clean install -DskipTests
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/app/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven/lib/maven-slf4j-provider-3.6.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/app/.jenkins/cache/artifactory-plugin/4.0.6/slf4j-simple-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.MavenSimpleLoggerFactory]
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.se.wp-library:wp-library-service:jar:2.3_RC1
+[WARNING] 'version' contains an expression but should be a constant. @ com.se.wp-library:wp-library-parent:${dsu.version}, /app/.jenkins/workspace/Document-short-url-snapshot/pom.xml, line 12, column 11
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.springframework.boot:spring-boot-starter-test:jar -> duplicate declaration of version (?) @ com.se.wp-library:wp-library-parent:${dsu.version}, /app/.jenkins/workspace/Document-short-url-snapshot/pom.xml, line 124, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.se.wp-library:wp-library-parent:pom:2.3_RC1
+[WARNING] 'version' contains an expression but should be a constant. @ com.se.wp-library:wp-library-parent:${dsu.version}, /app/.jenkins/workspace/Document-short-url-snapshot/pom.xml, line 12, column 11
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.springframework.boot:spring-boot-starter-test:jar -> duplicate declaration of version (?) @ com.se.wp-library:wp-library-parent:${dsu.version}, /app/.jenkins/workspace/Document-short-url-snapshot/pom.xml, line 124, column 15
+[WARNING] 'version' contains an expression but should be a constant. @ com.se.wp-library:wp-library-parent:${dsu.version}, /app/.jenkins/workspace/pom.xml, line 12, column 11
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.springframework.boot:spring-boot-starter-test:jar -> duplicate declaration of version (?) @ com.se.wp-library:wp-library-parent:${dsu.version}, /app/.jenkins/workspace/pom.xml, line 124, column 15
+[WARNING] 'parent.relativePath' of POM com.se.wp-library:wp-library-parent:${dsu.version} (/app/.jenkins/workspace/Document-short-url-snapshot/pom.xml) points at com.se.wp-library:wp-library-parent instead of org.springframework.boot:spring-boot-starter-parent, please verify your project structure @ com.se.wp-library:wp-library-parent:${dsu.version}, /app/.jenkins/workspace/Document-short-url-snapshot/pom.xml, line 5, column 10
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] Initializing Artifactory Build-Info Recording
+[HUDSON] Collecting dependencies info
+[HUDSON] Collecting dependencies info
+[HUDSON] Collecting dependencies info
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[HUDSON] Collecting dependencies info
+[HUDSON] Collecting dependencies info
+[HUDSON] Collecting dependencies info
+[INFO] White Papers Library                                               [pom]
+[INFO] wp-library-commons                                                 [jar]
+[INFO] wp-library-repo                                                    [jar]
+[INFO] wp-library-business                                                [jar]
+[INFO] wp-library-service                                                 [jar]
+[INFO] wp-library-web                                                     [war]
+[INFO] 
+[INFO] ----------------< com.se.wp-library:wp-library-parent >-----------------
+[INFO] Building White Papers Library 2.3_RC1                              [1/6]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.3.2:clean (default-clean) @ wp-library-parent ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (default) @ wp-library-parent ---
+[INFO] argLine set to -javaagent:/app/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/app/.jenkins/workspace/Document-short-url-snapshot/target/jacoco.exec,append=true
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:report (post-unit-test) @ wp-library-parent ---
+[INFO] Skipping JaCoCo execution due to missing execution data file:/app/.jenkins/workspace/Document-short-url-snapshot/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-install-plugin:3.1.3:install (default-install) @ wp-library-parent ---
+[INFO] Installing /app/.jenkins/workspace/Document-short-url-snapshot/pom.xml to /app/.m2/repository/com/se/wp-library/wp-library-parent/2.3_RC1/wp-library-parent-2.3_RC1.pom
+[INFO] 'wp-library-parent-2.3_RC1.pom' will not be deployed due to the defined include-exclude patterns.
+[WARNING] Attempt to (de-)serialize anonymous class org.jfrog.hudson.maven2.MavenDependenciesRecorder$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+[INFO] 
+[INFO] ----------------< com.se.wp-library:wp-library-commons >----------------
+[INFO] Building wp-library-commons 2.3_RC1                                [2/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.3.2:clean (default-clean) @ wp-library-commons ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (default) @ wp-library-commons ---
+[INFO] argLine set to -javaagent:/app/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/app/.jenkins/workspace/Document-short-url-snapshot/wp-library-commons/target/jacoco.exec,append=true
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ wp-library-commons ---
+[INFO] skip non existing resourceDirectory /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-commons/src/main/resources
+[INFO] skip non existing resourceDirectory /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-commons/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ wp-library-commons ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 33 source files with javac [debug release 17] to target/classes
+[INFO] /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-commons/src/main/java/com/se/wp/library/utils/ConfigUtil.java: Some input files use unchecked or unsafe operations.
+[INFO] /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-commons/src/main/java/com/se/wp/library/utils/ConfigUtil.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ wp-library-commons ---
+[INFO] skip non existing resourceDirectory /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-commons/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ wp-library-commons ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 16 source files with javac [debug release 17] to target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.1.2:test (default-test) @ wp-library-commons ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:report (post-unit-test) @ wp-library-commons ---
+[INFO] Skipping JaCoCo execution due to missing execution data file:/app/.jenkins/workspace/Document-short-url-snapshot/wp-library-commons/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-jar-plugin:3.3.0:jar (default-jar) @ wp-library-commons ---
+[INFO] Building jar: /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-commons/target/wp-library-commons-2.3_RC1.jar
+[INFO] 
+[INFO] --- maven-install-plugin:3.1.3:install (default-install) @ wp-library-commons ---
+[INFO] Installing /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-commons/pom.xml to /app/.m2/repository/com/se/wp-library/wp-library-commons/2.3_RC1/wp-library-commons-2.3_RC1.pom
+[INFO] Installing /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-commons/target/wp-library-commons-2.3_RC1.jar to /app/.m2/repository/com/se/wp-library/wp-library-commons/2.3_RC1/wp-library-commons-2.3_RC1.jar
+[INFO] 'wp-library-commons-2.3_RC1.jar' will not be deployed due to the defined include-exclude patterns.
+[INFO] 'wp-library-commons-2.3_RC1.pom' will not be deployed due to the defined include-exclude patterns.
+[INFO] 
+[INFO] -----------------< com.se.wp-library:wp-library-repo >------------------
+[INFO] Building wp-library-repo 2.3_RC1                                   [3/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.3.2:clean (default-clean) @ wp-library-repo ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (default) @ wp-library-repo ---
+[INFO] argLine set to -javaagent:/app/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/app/.jenkins/workspace/Document-short-url-snapshot/wp-library-repo/target/jacoco.exec,append=true
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ wp-library-repo ---
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ wp-library-repo ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 181 source files with javac [debug release 17] to target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ wp-library-repo ---
+[INFO] skip non existing resourceDirectory /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-repo/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ wp-library-repo ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 2 source files with javac [debug release 17] to target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.1.2:test (default-test) @ wp-library-repo ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:report (post-unit-test) @ wp-library-repo ---
+[INFO] Skipping JaCoCo execution due to missing execution data file:/app/.jenkins/workspace/Document-short-url-snapshot/wp-library-repo/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-jar-plugin:3.3.0:jar (default-jar) @ wp-library-repo ---
+[INFO] Building jar: /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-repo/target/wp-library-repo-2.3_RC1.jar
+[INFO] 
+[INFO] --- maven-install-plugin:3.1.3:install (default-install) @ wp-library-repo ---
+[INFO] Installing /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-repo/pom.xml to /app/.m2/repository/com/se/wp-library/wp-library-repo/2.3_RC1/wp-library-repo-2.3_RC1.pom
+[INFO] Installing /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-repo/target/wp-library-repo-2.3_RC1.jar to /app/.m2/repository/com/se/wp-library/wp-library-repo/2.3_RC1/wp-library-repo-2.3_RC1.jar
+[INFO] 'wp-library-repo-2.3_RC1.jar' will not be deployed due to the defined include-exclude patterns.
+[INFO] 'wp-library-repo-2.3_RC1.pom' will not be deployed due to the defined include-exclude patterns.
+[INFO] 
+[INFO] ---------------< com.se.wp-library:wp-library-business >----------------
+[INFO] Building wp-library-business 2.3_RC1                               [4/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.3.2:clean (default-clean) @ wp-library-business ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (default) @ wp-library-business ---
+[INFO] argLine set to -javaagent:/app/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/app/.jenkins/workspace/Document-short-url-snapshot/wp-library-business/target/jacoco.exec,append=true
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ wp-library-business ---
+[INFO] skip non existing resourceDirectory /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-business/src/main/resources
+[INFO] skip non existing resourceDirectory /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-business/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ wp-library-business ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 16 source files with javac [debug release 17] to target/classes
+[INFO] /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-business/src/main/java/com/se/wp/library/soap/bsl/rest/util/BslDocumentServiceResponseRestUtil.java: /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-business/src/main/java/com/se/wp/library/soap/bsl/rest/util/BslDocumentServiceResponseRestUtil.java uses or overrides a deprecated API.
+[INFO] /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-business/src/main/java/com/se/wp/library/soap/bsl/rest/util/BslDocumentServiceResponseRestUtil.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ wp-library-business ---
+[INFO] skip non existing resourceDirectory /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-business/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ wp-library-business ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 7 source files with javac [debug release 17] to target/test-classes
+[INFO] /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-business/src/test/java/com/se/wp/library/soap/bsl/util/BslDocumentServiceResponseUtilTest.java: /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-business/src/test/java/com/se/wp/library/soap/bsl/util/BslDocumentServiceResponseUtilTest.java uses unchecked or unsafe operations.
+[INFO] /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-business/src/test/java/com/se/wp/library/soap/bsl/util/BslDocumentServiceResponseUtilTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.1.2:test (default-test) @ wp-library-business ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:report (post-unit-test) @ wp-library-business ---
+[INFO] Skipping JaCoCo execution due to missing execution data file:/app/.jenkins/workspace/Document-short-url-snapshot/wp-library-business/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-jar-plugin:3.3.0:jar (default-jar) @ wp-library-business ---
+[INFO] Building jar: /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-business/target/wp-library-business-2.3_RC1.jar
+[INFO] 
+[INFO] --- maven-install-plugin:3.1.3:install (default-install) @ wp-library-business ---
+[INFO] Installing /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-business/pom.xml to /app/.m2/repository/com/se/wp-library/wp-library-business/2.3_RC1/wp-library-business-2.3_RC1.pom
+[INFO] Installing /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-business/target/wp-library-business-2.3_RC1.jar to /app/.m2/repository/com/se/wp-library/wp-library-business/2.3_RC1/wp-library-business-2.3_RC1.jar
+[INFO] 'wp-library-business-2.3_RC1.jar' will not be deployed due to the defined include-exclude patterns.
+[INFO] 'wp-library-business-2.3_RC1.pom' will not be deployed due to the defined include-exclude patterns.
+[INFO] 
+[INFO] ----------------< com.se.wp-library:wp-library-service >----------------
+[INFO] Building wp-library-service 2.3_RC1                                [5/6]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.3.2:clean (default-clean) @ wp-library-service ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (default) @ wp-library-service ---
+[INFO] argLine set to -javaagent:/app/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/app/.jenkins/workspace/Document-short-url-snapshot/wp-library-service/target/jacoco.exec,append=true
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ wp-library-service ---
+[INFO] skip non existing resourceDirectory /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-service/src/main/resources
+[INFO] skip non existing resourceDirectory /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-service/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ wp-library-service ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 4 source files with javac [debug release 17] to target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ wp-library-service ---
+[INFO] skip non existing resourceDirectory /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-service/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ wp-library-service ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 2 source files with javac [debug release 17] to target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.1.2:test (default-test) @ wp-library-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:report (post-unit-test) @ wp-library-service ---
+[INFO] Skipping JaCoCo execution due to missing execution data file:/app/.jenkins/workspace/Document-short-url-snapshot/wp-library-service/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-jar-plugin:3.3.0:jar (default-jar) @ wp-library-service ---
+[INFO] Building jar: /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-service/target/wp-library-service-2.3_RC1.jar
+[INFO] 
+[INFO] --- maven-install-plugin:3.1.3:install (default-install) @ wp-library-service ---
+[INFO] Installing /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-service/pom.xml to /app/.m2/repository/com/se/wp-library/wp-library-service/2.3_RC1/wp-library-service-2.3_RC1.pom
+[INFO] Installing /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-service/target/wp-library-service-2.3_RC1.jar to /app/.m2/repository/com/se/wp-library/wp-library-service/2.3_RC1/wp-library-service-2.3_RC1.jar
+[INFO] 'wp-library-service-2.3_RC1.jar' will not be deployed due to the defined include-exclude patterns.
+[INFO] 'wp-library-service-2.3_RC1.pom' will not be deployed due to the defined include-exclude patterns.
+[INFO] 
+[INFO] ------------------< com.se.wp-library:wp-library-web >------------------
+[INFO] Building wp-library-web 2.3_RC1                                    [6/6]
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.3.2:clean (default-clean) @ wp-library-web ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (default) @ wp-library-web ---
+[INFO] argLine set to -javaagent:/app/.m2/repository/org/jacoco/org.jacoco.agent/0.7.2.201409121644/org.jacoco.agent-0.7.2.201409121644-runtime.jar=destfile=/app/.jenkins/workspace/Document-short-url-snapshot/wp-library-web/target/jacoco.exec,append=true
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ wp-library-web ---
+[INFO] Copying 5 resources from src/main/resources to target/classes
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ wp-library-web ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 6 source files with javac [debug release 17] to target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ wp-library-web ---
+[INFO] skip non existing resourceDirectory /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-web/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ wp-library-web ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 2 source files with javac [debug release 17] to target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.1.2:test (default-test) @ wp-library-web ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:report (post-unit-test) @ wp-library-web ---
+[INFO] Skipping JaCoCo execution due to missing execution data file:/app/.jenkins/workspace/Document-short-url-snapshot/wp-library-web/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-war-plugin:3.4.0:war (default-war) @ wp-library-web ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [wp-library-web] in [/app/.jenkins/workspace/Document-short-url-snapshot/wp-library-web/target/wp-library-web-2.3_RC1]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/app/.jenkins/workspace/Document-short-url-snapshot/wp-library-web/src/main/webapp]
+[INFO] Building war: /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-web/target/wp-library-web-2.3_RC1.war
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:3.2.11:repackage (repackage) @ wp-library-web ---
+[INFO] Replacing main artifact /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-web/target/wp-library-web-2.3_RC1.war with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-web/target/wp-library-web-2.3_RC1.war.original
+[INFO] 
+[INFO] --- maven-install-plugin:3.1.3:install (default-install) @ wp-library-web ---
+[INFO] Installing /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-web/pom.xml to /app/.m2/repository/com/se/wp-library/wp-library-web/2.3_RC1/wp-library-web-2.3_RC1.pom
+[INFO] Installing /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-web/target/wp-library-web-2.3_RC1.war to /app/.m2/repository/com/se/wp-library/wp-library-web/2.3_RC1/wp-library-web-2.3_RC1.war
+[INFO] 'wp-library-web-2.3_RC1.pom' will not be deployed due to the defined include-exclude patterns.
+[INFO] Artifactory Build Info Recorder: Saving Build Info to '/app/.jenkins/workspace/Document-short-url-snapshot/target/build-info.json'
+[INFO] Deploying artifact: https://global-artifacts.se.com/artifactory/sd-dcr-artifactory-maven-prod-dsu-release-fed/Document-short-url-release-local/com/se/wp-library/wp-library-web/2.3_RC1/wp-library-web-2.3_RC1.war
+[INFO] Artifactory Build Info Recorder: Deploying build info ...
+[INFO] Deploying build info...
+[INFO] Build-info successfully deployed. Browse it in Artifactory under https://global-artifacts.se.com/artifactory/webapp/builds/Document-short-url-snapshot/117
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for White Papers Library 2.3_RC1:
+[INFO] 
+[INFO] White Papers Library ............................... SUCCESS [  1.662 s]
+[INFO] wp-library-commons ................................. SUCCESS [  3.626 s]
+[INFO] wp-library-repo .................................... SUCCESS [  2.416 s]
+[INFO] wp-library-business ................................ SUCCESS [  1.613 s]
+[INFO] wp-library-service ................................. SUCCESS [  1.558 s]
+[INFO] wp-library-web ..................................... SUCCESS [  5.178 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  33.295 s
+[INFO] Finished at: 2025-06-24T08:23:28Z
+[INFO] ------------------------------------------------------------------------
+Waiting for Jenkins to finish collecting data
+[JENKINS] Archiving /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-business/pom.xml to com.se.wp-library/wp-library-business/2.3_RC1/wp-library-business-2.3_RC1.pom
+[JENKINS] Archiving /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-business/target/wp-library-business-2.3_RC1.jar to com.se.wp-library/wp-library-business/2.3_RC1/wp-library-business-2.3_RC1.jar
+[JENKINS] Archiving /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-web/pom.xml to com.se.wp-library/wp-library-web/2.3_RC1/wp-library-web-2.3_RC1.pom
+[JENKINS] Archiving /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-web/target/wp-library-web-2.3_RC1.war to com.se.wp-library/wp-library-web/2.3_RC1/wp-library-web-2.3_RC1.war
+[JENKINS] Archiving /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-commons/pom.xml to com.se.wp-library/wp-library-commons/2.3_RC1/wp-library-commons-2.3_RC1.pom
+[JENKINS] Archiving /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-commons/target/wp-library-commons-2.3_RC1.jar to com.se.wp-library/wp-library-commons/2.3_RC1/wp-library-commons-2.3_RC1.jar
+[JENKINS] Archiving /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-service/pom.xml to com.se.wp-library/wp-library-service/2.3_RC1/wp-library-service-2.3_RC1.pom
+[JENKINS] Archiving /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-service/target/wp-library-service-2.3_RC1.jar to com.se.wp-library/wp-library-service/2.3_RC1/wp-library-service-2.3_RC1.jar
+[JENKINS] Archiving /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-repo/pom.xml to com.se.wp-library/wp-library-repo/2.3_RC1/wp-library-repo-2.3_RC1.pom
+[JENKINS] Archiving /app/.jenkins/workspace/Document-short-url-snapshot/wp-library-repo/target/wp-library-repo-2.3_RC1.jar to com.se.wp-library/wp-library-repo/2.3_RC1/wp-library-repo-2.3_RC1.jar
+[JENKINS] Archiving /app/.jenkins/workspace/Document-short-url-snapshot/pom.xml to com.se.wp-library/wp-library-parent/2.3_RC1/wp-library-parent-2.3_RC1.pom
+channel stopped
+SSH: Connecting from host [schkapxi1542]
+SSH: Connecting with configuration [DSU_INT] ...
+SSH: EXEC: completed after 61,242 ms
+SSH: Disconnecting configuration [DSU_INT] ...
+SSH: Transferred 1 file(s)
+Fortify Jenkins plugin v 23.1.40
+Running upload-only step.
+Fortify Jenkins plugin v 23.1.40
+Performing Fortify upload process
+Using analysis results file: file:/app/.jenkins/workspace/Document-short-url-snapshot/Document-short-url-snapshot1.fpr
+Uploading analysis results file to Fortify Software Security Center at https://wfsiaprd12196.gad.schneider-electric.com to application 'SDURL_Document Short URL' and application version 'Release Branch'
+Analysis results uploaded successfully. artifact id = 58797
+Sleep for 1 minute(s)
+Retrieving build statistics from Fortify Software Security Center
+Processing folder = Critical ...
+Got 0 audit values for folder = Critical
+Processing folder = High ...
+Got 1 audit values for folder = High
+Processing folder = Medium ...
+Got 1 audit values for folder = Medium
+Processing folder = Low ...
+Got 1 audit values for folder = Low
+Processing folder = All ...
+Got 1 audit values for folder = All
+Calculated NVS=105.950000, failedCount=0
+Saving build summary
+Finished: SUCCESS
