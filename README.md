@@ -72,7 +72,7 @@ Complete serverless application architecture using AWS Lambda, API Gateway, Dyna
 ---
 
 ### ⭐ **AWS Power of Math Web Application**
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat&logo=amazonaws&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat&logo=awslambda&logoColor=white)
 ![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat&logo=awslambda&logoColor=white)
 
 Practical project demonstrating serverless deployment using AWS Lambda functions, API Gateway, and modern web application patterns.
@@ -93,14 +93,17 @@ Practical project demonstrating serverless deployment using AWS Lambda functions
 | **Scripting** | Python, Bash, PowerShell |
 | **Monitoring** | CloudWatch, ELK Stack, Prometheus |
 | **Databases** | RDS (MySQL, PostgreSQL), DynamoDB, S3 |
+| **ML/AI Infrastructure** | ML Pipeline Setup, Model Deployment, Infrastructure Automation |
 
 ---
 
 ## 📊 GitHub Statistics
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=cloudspace360&show_icons=true&theme=dark)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=cloudspace360&theme=dark)](https://github.com/cloudspace360)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=cloudspace360&layout=compact&theme=dark)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=cloudspace360&show_icons=true&theme=github_dark&count_private=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=cloudspace360&layout=compact&theme=github_dark)
 
 ---
 
@@ -112,15 +115,18 @@ I'm continuously learning and sharing knowledge about:
 - Infrastructure automation best practices
 - Cloud cost optimization strategies
 - Enterprise DevOps workflows
+- 🤖 **AI/ML** - Building and deploying intelligent applications
+- 🧠 **AI Infrastructure** - Setting up scalable ML infrastructure on AWS
+- 🔬 **MLOps** - Machine Learning Operations, model deployment pipelines, and automation
 
 ---
 
 ## 🤝 Let's Connect
 
-I'm always interested in collaborating on DevOps, cloud architecture, and infrastructure automation projects. Feel free to:
+I'm always interested in collaborating on DevOps, cloud architecture, AI infrastructure, and infrastructure automation projects. Feel free to:
 
 - 💬 Discuss cloud architecture and DevOps challenges
-- 🤖 Collaborate on open-source DevOps tools
+- 🤖 Collaborate on open-source DevOps and MLOps tools
 - 📚 Share knowledge and best practices
 - 🔗 Connect for networking and opportunities
 
@@ -133,6 +139,7 @@ Check out my repositories to see my latest work on:
 - Kubernetes deployments
 - CI/CD pipeline implementations
 - AWS cost optimization solutions
+- AI/ML infrastructure solutions
 
 ---
 
@@ -143,4 +150,3 @@ Most of my projects are open-source and available under the MIT License. Feel fr
 ---
 
 **⭐ If you find my projects helpful, please consider starring them!**
-
